@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.body{
+    background: rgb(250,246,230);
+}
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("picture/headerimg.webp");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex:  1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding:8px 12px;
+    position:relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height:2px;
+    background: #4D6B6A;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 15px;
+    color: white;
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position:absolute;
+        background: #4D6B6A;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    nav .fa ul{
+        padding: 30px;
+    }
+}
+
+.content{
+    background: rgb(250,246,230);
+    margin: auto;
+    padding-top: 80px;
+}
+.content h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+}
+.content p{
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row1{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.block1{
+    height: 447.5px;
+    width: 622.25px;
+    background: rgb(115,161,136);
+}
+.text-box1{
+    padding: 10%;
+}
+.text-box1 h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color:rgb(250,246,230);
+}
+.text-box1 ul{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color:rgb(250,246,230);
+}
+.content a{
+    margin-top: 90px;
+}
+
+.btn1{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(250,246,230);
+    border: 1px solid rgb(250,246,230);
+    padding: 15px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn1:hover{
+    border: 1px solid rgb(22,39,76);
+    background: rgb(22,39,76);
+    transition: 1s;
+}
+
+
+
+.block2{
+    height: 447.5px;
+    width: 622.25px;
+    background-image: url(picture/pethotel.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.row2{
+    display: flex;
+    justify-content: center;
+}
+.block3{
+    height: 447.5px;
+    width: 622.25px;
+    background-image: url(picture/pethaircut.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.block4{
+    height: 447.5px;
+    width: 622.25px;
+    background: rgb(22,39,76);
+}
+.text-box2{
+    padding: 10%;
+}
+.text-box2 h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color:rgb(250,246,230);
+}
+.text-box2 ul{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color:rgb(250,246,230);
+}
+.btn2{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(250,246,230);
+    border: 1px solid rgb(250,246,230);
+    padding: 15px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn2:hover{
+    border: 1px solid rgb(115,161,136);
+    background: rgb(115,161,136);
+    transition: 1s;
+}
+.row3{
+    display: flex;
+    justify-content: center;
+}
+.block5{
+    height: 447.5px;
+    width: 622.25px;
+    background: rgb(128,136,125);
+}
+.text-box3{
+    padding: 10%;
+}
+.text-box3 h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    color:rgb(250,246,230);
+}
+.text-box3 ul{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color:rgb(250,246,230);
+}
+.btn3{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(250,246,230);
+    border: 1px solid rgb(250,246,230);
+    padding: 15px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.btn3:hover{
+    border: 1px solid rgb(22,39,76);
+    background: rgb(22,39,76);
+    transition: 1s;
+}
+.block6{
+    height: 447.5px;
+    width: 622.25px;
+    background-image: url(picture/petadoption.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.follow{
+    padding-top: 70px;
+    display: flex;
+}
+
+.photo{
+    flex: 65%;
+    height:845.63px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text{
+    flex: 35%;
+    height:845.63px;
+    background: rgb(22,39,76);
+    text-align: center;
+}
+
+.text h1{
+    padding-top: 25%;
+    padding-bottom: 5%;
+    color:rgb(250,246,230);
+    font-size: 50px;
+}
+
+.text p{
+    padding-left: 10%;
+    padding-right: 10%;
+    color:rgb(250,246,230);
+    font-size: 25px;
+}
+
+.icons{
+    color: rgb(250,246,230);
+    padding-top: 15px;
+    font-size: 35px;
+}
+
+.photo1{
+    width: 33.4%;
+    height: 50%;
+    background-image: url(picture/photo1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.photo2{
+    width: 33.4%;
+    height: 50%;
+    background-image: url(picture/photo2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.photo3{
+    width: 33.2%;
+    height: 50%;
+    background-image: url(picture/photo3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.photo4{
+    width: 33.4%;
+    height: 50%;
+    background-image: url(picture/photo4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.photo5{
+    width: 33.4%;
+    height: 50%;
+    background-image: url(picture/photo5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.photo6{
+    width: 33.2%;
+    height: 50%;
+    background-image: url(picture/photo6.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.join{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("picture/joinus.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 500px;
+    margin: 3%;
+}
+.join h1{
+    padding-top: 5%;
+    padding-bottom: 2%;
+    text-align: center;
+    font-size: 50px;
+    color:rgb(250,246,230);
+}
+.join p{
+
+    text-align: center;
+    font-size: 30px;
+    color:rgb(250,246,230);
+}
+.join p a{
+    color: rgb(128,136,125);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.footer{
+    width: 100%;
+    padding: 30px 0;
+    background: rgb(22,39,76);
+    text-align: center;
+}
+.footer h4{
+    text-align: center;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color:rgb(250,246,230);
+}
+.footer p{
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 15px;
+    color:rgb(250,246,230);
+}
+.footerbottom{
+    padding-top: 30px;
+    display: flex;
+}
+.contact{
+    flex: 50%;
+    text-align:left;
+    margin-left: 22%;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    color:rgb(250,246,230);
+}
+.comment{
+    flex: 50%;
+    text-align: center;
+}
+.comment p{
+    text-align: left;
+    margin-top: 2%;
+    margin-right: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    color: #4D6B6A;
+}
+
+
+
+
+
+

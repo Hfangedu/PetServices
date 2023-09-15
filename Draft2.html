@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pet Wash | Home</title>
+        <link rel="stylesheet" type="text/css" href="draft style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans Soyombo">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="navbar-content">
+                    <div class="logo">
+                        <a href="/asg/asg/petmanagement.html">
+                            <img src="logo.png" alt="Top's Pet">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#navOffcanvas">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>    
+                </div>
+                <div class="offcanvas offcanvas-end" id="navOffcanvas" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#book">Book</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="custom-container-1" id="about">
+            <div class="left-container">
+                <h1>Pet Care Service</h1>
+                <p>Groom your pet in the best possible way! Our expert groomers 
+                    provide quality services with individualized care, so your 
+                    furry friend is sure to look and feel their very best. 
+                    Visit us today and discover why we are the city's 
+                    leading choice for all of your pet grooming needs!
+                </p>
+                <button id="learn-more-button" href="#services">Learn More</button>
+                <button id="book-button" href="#book">Book Now</button>
+            </div>
+            <div class="right-container">
+                <div class="circular-image">
+                    <img src="petwash1.jpg" alt="Pet Wash Image">
+                </div>
+            </div>
+        </div>
+        <div class="custom-container-2" id="services">
+            <div class="header-container">
+                <h1>Our Services</h1>
+            </div>
+            <div class="card-container">
+                <div class="card" id="card1">
+                    <div class="card-content">
+                        <h2 class="card-title">Bathing and Spa</h2>
+                        <p class="card-body">
+                        Indulge your pet in a spa-like bathing experience 
+                        that combines cleanliness and relaxation. Our expert 
+                        groomers use high-quality products to ensure your 
+                        pet emerges refreshed and pampered.</p>                            
+                    </div> 
+                </div>
+                <div class="card" id="card2">
+                    <div class="card-content">
+                        <h2 class="card-title">Brushing and De-Shedding</h2>
+                        <p class="card-body">
+                        Experience the joy of a well-groomed pet with our 
+                        brushing and de-shedding services. Our skilled 
+                        groomers will untangle mats, remove loose fur, 
+                        and leave your pet's coat looking sleek and 
+                        healthy.</p>
+                    </div> 
+                </div>
+                <div class="card" id="card3">
+                    <div class="card-content">
+                        <h2 class="card-title">Nail, Ear and Teeth Care</h2>
+                        <p class="card-body">
+                        Elevate your pet's well-being with our all-in-one 
+                        care package. We offer gentle nail trimming, thorough 
+                        ear cleaning, and expert teeth cleaning to keep your 
+                        pet looking and feeling their best.</p>
+                    </div>
+                </div>
+                <div class="card" id="card4">
+                    <div class="card-content">
+                        <h2 class="card-title">Haircuts and Styling</h2>
+                        <p class="card-body">
+                        Transform your pet's appearance with our expert 
+                        haircut and styling services. Whether you prefer 
+                        a breed-standard look or a unique style, our 
+                        groomers will work their magic to create a 
+                        tailored, fashionable appearance for your 
+                        furry friend. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container custom-container-3" id="book">
+            <div class="content">
+                <h1>Book Pet Wash Service</h1>
+                <form id="booking-form">
+                    <div class="form-group cus">
+                        <input type="text" id="pet-name" name="pet-name" required>
+                        <label for="pet-name">Pet Name</label>
+                    </div>
+                    <div class="form-group" id="dropdown">
+                        <select id="pet-type" name="pet-type" required>
+                            <option value="Pet Type" selected disabled>Pet Type</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="date">
+                        <label for="appointment-date">Appointment and Date</label>
+                        <input type="datetime-local" id="appointment-date" name="appointment-date" required>
+                    </div>
+                    <div class="form-group" id="service-type" required>
+                        <label for="service-type" id="cus2">Services</label>
+                        <div>
+                            <input type="checkbox" id="service-type-bath" name="service-type" value="Bath">
+                            <label for="service-type-bath">Bathing and Spa</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="service-type-brush" name="service-type" value="Brushing">
+                            <label for="service-type-brush">Brushing and De-Shedding</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="service-type-nail" name="service-type" value="Nail">
+                            <label for="service-type-nail">Nail, Ear and Teeth Care</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="service-type-haircuts" name="service-type" value="Haircuts">
+                        <label for="service-type-haircuts">Haircuts and Styling</label>
+                        </div>
+                    </div>                    
+                    <div class="form-group cus">
+                        <input type="text" id="customer-name" name="customer-name" required>
+                        <label for="customer-name">Your Name</label>
+                    </div>
+                    <div class="form-group cus">
+                        <input type="email" id="customer-email" name="customer-email" required>
+                        <label for="customer-email">Your Email</label>
+                    </div>
+                    <div class="form-group cus">
+                        <input type="tel" id="customer-phone" name="customer-phone" required>
+                        <label for="customer-phone">Phone Number</label>
+                    </div>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Book Now</button>
+                    <button id="view-history">View Booking History</button>
+                </form>
+            </div>
+        </div>
+        <script src="Booking.js"></script>
+    </body>
+</html>

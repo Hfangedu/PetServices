@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('Montserrat-ExtraBold.woff2') format('woff2'), /* Modern browsers */
+         url('Montserrat-ExtraBold.woff') format('woff'),     /* Older browsers */
+         url('Montserrat-ExtraBold.ttf') format('truetype');  /* Fallback for very old browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url("background (2).jpg");
+    background-size: cover; /* This ensures the image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Optional: Keeps the image fixed as you scroll */
+}
+
+h1 {
+    font-family: 'Montserrat-ExtraBold';
+    font-size: 80px;
+    color: #000;
+    text-align: center;
+    margin: 80px auto 90px;
+}
+
+div {
+    font-family: 'Noto Sans Soyombo';
+    font-size: 18px;
+}
+
+div #booking-history {
+    border-radius: 50px;
+    width: 90%;
+    align-items: center;
+}
+
+div #cus2 {
+    border-radius: 50px;
+    width: 50%;
+    overflow: hidden; 
+    margin: 0px auto 30px auto;
+    padding: 20px 50px 20px 50px;
+    background-color: rgb(188, 255, 218);
+    align-items: center;
+    transition: all 1s ease-in-out;
+    
+}
+
+div #cus3 {
+    border-radius: 50px;
+    width: 50%;
+    overflow: hidden; 
+    margin: 0px auto 30px auto;
+    padding: 20px 50px 20px 50px;
+    background-color: rgb(174, 250, 255);
+    align-items: center;
+    transition: all 1s ease-in-out;   
+}
+
+div #cus4 {
+    border-radius: 50px;
+    width: 50%;
+    overflow: hidden; 
+    margin: 0px auto 30px auto;
+    padding: 20px 50px 20px 50px;
+    background-color: rgb(255, 214, 248);
+    align-items: center;
+    transition: all 1s ease-in-out;
+    
+}
+
+/* Style individual data items */
+div #cus2:hover,
+div #cus3:hover,
+div #cus4:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+/* Style for the pop-up box */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Style for the overlay background */
+.overlay {
+    display: none;
+}
+
+#button-cus1 {
+    border-radius: 50px;
+    width: 50%;
+    display: flex; /* Use flex display */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure the container takes up the full height */
+    margin: 80px auto 50px auto;
+}
+
+#back-to-draft2 {
+    border-radius: 40px;
+    background-color: #000; /* Green background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    font-family: "Montserrat-ExtraBold";
+    padding: 10px 50px 10px 50px;
+    font-size: 20px; /* Font size */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: background-color 2s ease; /* Add smooth hover effect */
+    transition: color 2s ease box-shadow 0.8s ease; /* Add smooth hover effect */
+    transition: transform 0.2s ease-in-out;
+    transform-origin: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a bottom shadow */
+}
+
+#back-to-draft2:hover {
+    background-color: #cdfffc; /* Darker green on hover */
+    color: rgb(0, 0, 0); /* Text color */
+    transform: scale(1.2);
+}
